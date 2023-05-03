@@ -1,5 +1,6 @@
+// Fonts Dancing script
+
 body {
-  background-color: azure;
  
 }
 
@@ -7,8 +8,8 @@ li {
   list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 * {
@@ -17,18 +18,15 @@ a{
   box-sizing: border-box;
 }
 
+// Color
 
-// Color 
-
-$black : rgb(22, 18, 18);
-$gray  : rgb(129, 128, 128);
-$yellow : rgb(235, 231, 37);
-
+$black: rgb(22, 18, 18);
+$gray: rgb(129, 128, 128);
+$yellow: rgb(235, 231, 37);
 
 // mixin
 
-@mixin justify-content($propriete){
-    display: flex;
-    justify-content: $propriete;
-    
+@mixin justify-content($propriete) {
+  display: flex;
+  justify-content: $propriete;
 }
