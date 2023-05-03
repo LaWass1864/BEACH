@@ -1,0 +1,20 @@
+nav {
+  @include justify-content(center);
+  margin: 30px auto;
+  background-color: $yellow;
+  border-radius: 15px;
+  width: 90%;
+  
+  ul {
+    display: flex;
+    
+    
+    li {
+      padding: 10px;
+
+      a {
+        color: $gray;
+      }
+    }
+  }
+}

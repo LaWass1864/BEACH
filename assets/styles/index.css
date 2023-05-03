@@ -1,3 +1,35 @@
 body {
-  background-color: rgb(139, 49, 49);
+  background-color: azure;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: rgb(235, 231, 37);
+  border-radius: 15px;
+  width: 90%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul li a {
+  color: rgb(129, 128, 128);
 }/*# sourceMappingURL=index.css.map */
