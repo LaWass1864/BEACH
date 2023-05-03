@@ -4,7 +4,11 @@ header {
   border-radius: 30px;
   display: grid;
   grid-template-columns: 50% 50%;
-  
+  @media screen and (max-width: 618px) {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    }
 
   .left-header {
     img {
