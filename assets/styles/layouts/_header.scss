@@ -1,0 +1,30 @@
+header {
+  margin: 30px auto;
+  border: 2px solid $black;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+
+  .left-header {
+    img {
+      max-width: 80%;
+    }
+  }
+
+  .right-header{
+    display: flex;
+flex-direction: column;
+text-align: left;
+justify-content: space-evenly;
+
+.buttons{
+    display: flex;
+    button{
+        margin-right: 10px;
+        background-color: $black;
+        color: whitesmoke
+    }
+}
+  }
+}

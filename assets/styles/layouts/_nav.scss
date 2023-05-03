@@ -1,11 +1,17 @@
 nav {
   @include justify-content(space-between);
   border-radius: 15px;
-
-  margin: 30px auto;
-  max-width: 80%;
+    background: $yellow;
+ 
+  .right-menu{
+      @media screen and (max-width: 618px) {
+          display: none;
+          }
+        }
   ul {
     display: flex;
+
+    }
     li {
       padding: 30px;
 
@@ -15,4 +21,4 @@ nav {
       }
     }
   }
-}
+

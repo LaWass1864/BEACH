@@ -1,7 +1,9 @@
 // Fonts Dancing script
 
 body {
- 
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
 }
 
 li {
@@ -22,7 +24,7 @@ a {
 
 $black: rgb(22, 18, 18);
 $gray: rgb(129, 128, 128);
-$yellow: rgb(235, 231, 37);
+$yellow: #ffd91a;
 
 // mixin
 

@@ -1,3 +1,9 @@
+body {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
 li {
   list-style: none;
 }
@@ -16,16 +22,45 @@ nav {
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
-  margin: 30px auto;
-  max-width: 80%;
+  background: #ffd91a;
+}
+@media screen and (max-width: 618px) {
+  nav .right-menu {
+    display: none;
+  }
 }
 nav ul {
   display: flex;
 }
-nav ul li {
+nav li {
   padding: 30px;
 }
-nav ul li a {
+nav li a {
   color: rgb(129, 128, 128);
   font-weight: 900;
+}
+
+header {
+  margin: 30px auto;
+  border: 2px solid rgb(22, 18, 18);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+header .left-header img {
+  max-width: 80%;
+}
+header .right-header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+}
+header .right-header .buttons {
+  display: flex;
+}
+header .right-header .buttons button {
+  margin-right: 10px;
+  background-color: rgb(22, 18, 18);
+  color: whitesmoke;
 }/*# sourceMappingURL=index.css.map */
