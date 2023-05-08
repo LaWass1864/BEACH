@@ -25,12 +25,19 @@ header {
 font-size: 0.9rem;
     .buttons {
       display: flex;
-
+      margin-top: 10px;
+      margin-bottom: 10px;
       button {
+          @media screen and (max-width: 905px)   {
+            padding: auto;
+            margin-top: 30px;
+            
+            }
         margin-right: 10px;
         background-color: $black;
         padding: 1rem 1.5rem;
         border-radius: 3rem;
+
         
         &:hover:first-child{
             background: red;
