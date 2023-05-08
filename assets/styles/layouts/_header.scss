@@ -5,6 +5,7 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
   max-height: 700px;
+ 
   @media screen and (max-width: 618px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -28,11 +29,12 @@ font-size: 0.9rem;
       margin-top: 10px;
       margin-bottom: 10px;
       button {
-          @media screen and (max-width: 905px)   {
-            padding: auto;
-            margin-top: 30px;
-            
-            }
+        @media screen and (max-width: 905px)   {
+          padding: auto;
+          margin-top: 30px;
+          
+        }
+        font-family: bw;
         margin-right: 10px;
         background-color: $black;
         padding: 1rem 1.5rem;
