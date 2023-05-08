@@ -1,11 +1,11 @@
 header {
-  margin: 30px auto;
+  margin: 40px auto;
   border: 2px solid $black;
   border-radius: 30px;
   display: grid;
   grid-template-columns: 50% 50%;
-  max-height: 700px;
- max-width: max-content;
+  
+ 
   @media screen and (max-width: 618px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -24,6 +24,7 @@ header {
     text-align: left;
     justify-content: space-evenly;
 font-size: 0.9rem;
+
     .buttons {
       display: flex;
       margin-top: 10px;

@@ -4,11 +4,14 @@
   src: url("../fonts/BwModelicaSS01-ExtraBold.woff");
 }
 body {
+  margin: 0;
+  padding: 0;
   width: 80%;
   margin: 40px auto;
   text-align: center;
   font-family: bw;
-  height: 400vh;
+  height: 900vh;
+  scroll-behavior: smooth;
 }
 
 li {

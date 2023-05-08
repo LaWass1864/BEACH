@@ -3,11 +3,14 @@
   src: url("../fonts/BwModelicaSS01-ExtraBold.woff");
 }
 body {
+  margin: 0;
+  padding: 0;
   width: 80%;
   margin: 40px auto;
   text-align: center;
   font-family: bw;
-  height: 400vh;
+  height: 900vh;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -25,13 +28,14 @@ a {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
   border-radius: 15px;
   background: #ffd91a;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  position: fixed;
+  top: 50px;
+  width: 80%;
 }
 nav .logo {
   display: flex;
@@ -70,14 +74,11 @@ nav .right-menu li a:hover {
 }
 
 header {
-  margin: 30px auto;
+  margin: 40px auto;
   border: 2px solid rgb(22, 18, 18);
   border-radius: 30px;
   display: grid;
   grid-template-columns: 50% 50%;
-  max-height: 700px;
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 @media screen and (max-width: 618px) {
   header {
@@ -127,8 +128,6 @@ header .right-header .buttons button a {
 
 .section1 {
   background: url(https://assets.website-files.com/62b94e6b19cb4487d4ca3d43/62e481b3e4a0474dbafb520e_home-background.png) fixed center/cover;
-  max-height: auto;
-  max-width: auto;
   padding: 200px;
   border-radius: 30px;
   display: grid;

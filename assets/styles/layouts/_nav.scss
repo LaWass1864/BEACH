@@ -1,11 +1,13 @@
 nav {
-  @include justify-content(space-between);
+  
   border-radius: 15px;
   background: $yellow;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-
+  padding: 20px;   
+  position: fixed;
+top: 50px;
+  width: 80%;
   .logo {
     display: flex;
     align-items: center;
@@ -32,7 +34,6 @@ nav {
     li {
       margin-right: 15px;
 
-      
       a {
         text-decoration: none;
         text-transform: capitalize;
@@ -40,12 +41,10 @@ nav {
         font-size: 0.9rem;
         font-weight: 700;
         line-height: 1.5;
-        
+
         &:hover {
           color: #fff;
         }
-        
-
       }
     }
   }
