@@ -76,6 +76,8 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
   max-height: 700px;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 @media screen and (max-width: 618px) {
   header {
@@ -137,6 +139,7 @@ header .right-header .buttons button a {
   .section1 {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 30px;
   }
 }
 .section1 div {
