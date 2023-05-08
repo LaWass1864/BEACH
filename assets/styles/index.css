@@ -139,7 +139,6 @@ header .right-header .buttons button a {
   .section1 {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 30px;
   }
 }
 .section1 div {
