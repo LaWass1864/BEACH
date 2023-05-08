@@ -9,7 +9,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     padding: 40px;
-    }
+  }
 
   .left-header {
     img {
@@ -17,19 +17,33 @@ header {
     }
   }
 
-  .right-header{
+  .right-header {
     display: flex;
-flex-direction: column;
-text-align: left;
-justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+font-size: 0.9rem;
+    .buttons {
+      display: flex;
 
-.buttons{
-    display: flex;
-    button{
+      button {
         margin-right: 10px;
         background-color: $black;
-        color: whitesmoke
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+        
+        &:hover:first-child{
+            background: red;
+            border: 2px solid black;
+        }
+        &:hover:last-child{
+            box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+            transform: translateX(0.3em);
+        }
+        a {
+          color: $white;
+        }
+      }
     }
-}
   }
 }

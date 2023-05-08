@@ -1,8 +1,12 @@
+@font-face {
+  font-family: "bw";
+  src: url("../fonts/BwModelicaSS01-ExtraBold.woff");
+}
 body {
   width: 80%;
   margin: 40px auto;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: bw;
 }
 
 li {
@@ -35,7 +39,7 @@ nav .logo {
 nav .logo img {
   margin-right: 10px;
 }
-nav .logo span {
+nav .logo a {
   color: #f5f0f0;
   font-family: Commons Pro, sans-serif;
   font-weight: 800;
@@ -87,6 +91,7 @@ header .right-header {
   flex-direction: column;
   text-align: left;
   justify-content: space-evenly;
+  font-size: 0.9rem;
 }
 header .right-header .buttons {
   display: flex;
@@ -94,5 +99,17 @@ header .right-header .buttons {
 header .right-header .buttons button {
   margin-right: 10px;
   background-color: rgb(22, 18, 18);
-  color: whitesmoke;
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+}
+header .right-header .buttons button:hover:first-child {
+  background: red;
+  border: 2px solid black;
+}
+header .right-header .buttons button:hover:last-child {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateX(0.3em);
+}
+header .right-header .buttons button a {
+  color: #f5f0f0;
 }/*# sourceMappingURL=index.css.map */
