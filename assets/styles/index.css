@@ -2,6 +2,7 @@ body {
   width: 80%;
   margin: 40px auto;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
@@ -23,21 +24,44 @@ nav {
   justify-content: space-between;
   border-radius: 15px;
   background: #ffd91a;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
-@media screen and (max-width: 618px) {
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  margin-right: 10px;
+}
+nav .logo span {
+  color: #f5f0f0;
+  font-family: Commons Pro, sans-serif;
+  font-weight: 800;
+}
+nav .right-menu {
+  display: flex;
+  padding: 10px;
+}
+@media screen and (max-width: 920px) {
   nav .right-menu {
     display: none;
   }
 }
-nav ul {
-  display: flex;
+nav .right-menu li {
+  margin-right: 15px;
 }
-nav li {
-  padding: 30px;
+nav .right-menu li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #f5f0f0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
-nav li a {
-  color: rgb(129, 128, 128);
-  font-weight: 900;
+nav .right-menu li a:hover {
+  color: #fff;
 }
 
 header {
@@ -46,11 +70,13 @@ header {
   border-radius: 30px;
   display: grid;
   grid-template-columns: 50% 50%;
+  max-height: 700px;
 }
 @media screen and (max-width: 618px) {
   header {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 40px;
   }
 }
 header .left-header img {

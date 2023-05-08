@@ -1,24 +1,52 @@
 nav {
   @include justify-content(space-between);
   border-radius: 15px;
-    background: $yellow;
- 
-  .right-menu{
-      @media screen and (max-width: 618px) {
-          display: none;
-          }
-        }
-  ul {
+  background: $yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .logo {
     display: flex;
+    align-items: center;
 
+    img {
+      margin-right: 10px;
     }
-    li {
-      padding: 30px;
 
-      a {
-        color: $gray;
-        font-weight: 900;
-      }
+    span {
+      color: $white;
+      font-family: Commons Pro, sans-serif;
+      font-weight: 800;
     }
   }
 
+  .right-menu {
+    display: flex;
+    padding: 10px;
+
+    @media screen and (max-width: 920px) {
+      display: none;
+    }
+
+    li {
+      margin-right: 15px;
+
+      
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $white;
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1.5;
+        
+        &:hover {
+          color: #fff;
+        }
+        
+
+      }
+    }
+  }
+}
