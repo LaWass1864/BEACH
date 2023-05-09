@@ -220,6 +220,11 @@ header .right-header .buttons button a {
   position: relative;
   cursor: pointer;
 }
+@media screen and (max-width: 760px) {
+  .section2 .img .img-container img {
+    width: 6rem;
+  }
+}
 .section2 .img .img-container img:hover {
   transform: scale(1.2);
 }
