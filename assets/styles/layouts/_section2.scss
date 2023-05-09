@@ -1,0 +1,71 @@
+.section2 {
+  margin-top: 90px;
+  background-image: url(https://assets.website-files.com/62b94e6b19cb4487d4ca3d43/62bacd30fa2cce04546413f8_Projects%20Section.webp);
+  height: auto;
+  padding: 110px;
+  border-radius: 35px;
+  .img {
+    width: 100%;
+    grid-row-gap: 16px;
+    color: #f8f8f8;
+    text-align: center;
+    background-color: $black;
+    border-radius: 32px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 3.8rem;
+    display: flex;
+    text-transform: capitalize;
+    .img-container {
+      max-width: 39rem;
+      grid-column-gap: 0px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: -6.9rem;
+      margin-left: 1.4rem;
+      display: flex;
+      @media screen and (max-width: 1230px) {
+        max-width: 30rem;
+        grid-column-gap: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 9rem;
+        border: 4px solid $black;
+        border-radius: 50%;
+        margin-top: -1.5rem;
+        margin-left: -1.4rem;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .buttons-2 {
+      button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: bw;
+        margin-right: 10px;
+        background-color: $yellow;
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+        text-transform: capitalize;
+
+        &:hover:first-child {
+          background: red;
+          border: 2px solid black;
+        }
+        &:hover:last-child {
+          transform: translate(5px, -2px);
+        }
+      }
+    }
+  }
+}
