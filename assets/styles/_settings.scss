@@ -3,15 +3,18 @@
   font-family: "bw";
   src: url("../fonts/BwModelicaSS01-ExtraBold.woff");
 }
+
+
 body {
-  margin: 0;
+  
   padding: 0;
   width: 80%;
   margin: 40px auto;
   text-align: center;
   font-family: bw;
-  height: 900vh;
-  scroll-behavior: smooth;
+  height: 400vh;
+  
+  
 }
 
 li {
