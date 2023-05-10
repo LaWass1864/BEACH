@@ -195,12 +195,16 @@ header .right-header .buttons button a {
 .section2 .img .img-container {
   max-width: 39rem;
   grid-column-gap: 0px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: -6.9rem;
-  margin-left: 1.4rem;
-  display: flex;
+}
+@media screen and (max-width: 760px) {
+  .section2 .img .img-container p {
+    color: aqua;
+  }
 }
 @media screen and (max-width: 1230px) {
   .section2 .img .img-container {
@@ -220,15 +224,16 @@ header .right-header .buttons button a {
   position: relative;
   cursor: pointer;
 }
-@media screen and (max-width: 760px) {
-  .section2 .img .img-container img {
-    width: 6rem;
-  }
-}
 .section2 .img .img-container img:hover {
   transform: scale(1.2);
 }
-.section2 .img .buttons-2 button {
+@media screen and (max-width: 760px) {
+  .section2 .img .img-container img {
+    width: 50%;
+  }
+}
+
+.buttons-2 button {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: bw;
@@ -238,10 +243,10 @@ header .right-header .buttons button a {
   border-radius: 3rem;
   text-transform: capitalize;
 }
-.section2 .img .buttons-2 button:hover:first-child {
+.buttons-2 button:hover:first-child {
   background: red;
   border: 2px solid black;
 }
-.section2 .img .buttons-2 button:hover:last-child {
+.buttons-2 button:hover:last-child {
   transform: translate(5px, -2px);
 }/*# sourceMappingURL=index.css.map */
