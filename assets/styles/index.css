@@ -82,6 +82,7 @@ header {
   grid-template-columns: 50% 50%;
   height: auto;
   margin-top: 100px;
+  overflow: hidden;
 }
 @media screen and (max-width: 618px) {
   header {
@@ -178,6 +179,11 @@ header .right-header .buttons button a {
   padding: 110px;
   border-radius: 35px;
 }
+@media screen and (max-width: 547px) {
+  .section2 {
+    padding: 30px;
+  }
+}
 .section2 .img {
   width: 100%;
   grid-row-gap: 16px;
@@ -200,11 +206,6 @@ header .right-header .buttons button a {
   justify-content: center;
   align-items: center;
   margin-top: -6.9rem;
-}
-@media screen and (max-width: 760px) {
-  .section2 .img .img-container p {
-    color: aqua;
-  }
 }
 @media screen and (max-width: 1230px) {
   .section2 .img .img-container {
