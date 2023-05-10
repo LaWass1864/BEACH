@@ -6,15 +6,13 @@
 
 
 body {
-  
   padding: 0;
   width: 80%;
   margin: 40px auto;
   text-align: center;
   font-family: bw;
-  height: 400vh;
-  
-  
+  // Hauteur de la page. 
+  height: 300vh;
 }
 
 li {
@@ -38,7 +36,7 @@ $gray: rgb(129, 128, 128);
 $yellow: #ffd91a;
 $white : #f5f0f0;
 // mixin
-
+// $propriete : space-around, space-between ect
 @mixin justify-content($propriete) {
   display: flex;
   justify-content: $propriete;
